@@ -1,0 +1,78 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .logo{
+      
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+        }
+  .logout  {
+
+z-index: 9999;
+  color: #000000;
+  letter-spacing: 2px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+   border: 0;
+  line-height: 0.8
+ 
+}
+    </style>
+  </head>
+  <body>
+    {% include "blood/navbar.html" %}
+    <br><br><br><br><br><br>
+<div class="container"> 
+    
+    <!-- Middle Content Start -->
+    
+    <div class="vd_content-wrapper" style="min-height: 8px;">
+      <div class="vd_container" style="min-height: 8px;">
+        <div class="vd_content clearfix">
+          <div class="vd_content-section clearfix">
+            <div class="vd_register-page">
+              <div class="heading clearfix">
+                <div class="logo">
+                  <h2><img src="{% static "image/logout.png" %}" alt="logo"></h2>
+                </div>
+              </div>
+              <div class="w3-container w3-center">
+                <h2 class="logout">You Have Been Logged Out</h2>
+                <p class="logout">Thank you for using Blood Bank System.</p>
+              </div>
+              
+                   
+                  </form>
+                </div>
+              </div>
+              <!-- Panel Widget -->
+              
+            </div>
+            <!-- vd_login-page --> 
+            
+          </div>
+          <!-- .vd_content-section --> 
+          
+        </div>
+        <!-- .vd_content --> 
+      </div>
+      <!-- .vd_container --> 
+    </div>
+    <!-- .vd_content-wrapper --> 
+    
+    <!-- Middle Content End --> 
+    
+  </div>
+<br><br><br>
+<br><br><br>
+
+
+  </body>
+</html>

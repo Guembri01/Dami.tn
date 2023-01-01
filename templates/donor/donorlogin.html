@@ -1,0 +1,44 @@
+{%load static%}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8"> 
+      <title>Dami</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+  </head>
+  <body>
+    {% include "blood/navbar.html" %}
+<div class="body2">
+  <form method="POST">
+
+    <div class="box">
+        <div class="form">
+            {% csrf_token %}
+            <h2> Donor Sign in</h2>
+            <div class="inputBox" >
+                <input type ="text" required="required" name="username">
+                {% render_field div.username class="form" %}
+                <span>Username</span>
+                <i></i>
+                
+        </div>
+        <div class="inputBox" >
+            <input type ="password" required="required" name="password">
+            {% render_field div.password class="form" %}
+            <span>Password</span>
+            <i></i>
+        </div>
+        <div class="links">
+            <a href="#">Forgot password</a>
+            <a href="donorsignup">Signup</a>
+        </div>
+        <input type="submit" value="LOGIN">
+    </div>
+    </div>
+
+    </div>
+  </form> 
+</div>  
+   
+  </body>
